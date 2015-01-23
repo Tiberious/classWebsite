@@ -1,0 +1,72 @@
+/*
+ * Set the .frontImgs div as the containing element.
+ * Also set an explicit height so that it doesn't
+ * collapse when we position all of the images.
+ */
+.frontImgs
+{
+   position: relative;
+   height: 375px;
+}
+
+.frontImgs img
+{
+   /*
+    * Position the images so that they
+    * are all centered at the top of the
+    * containing element.
+    */
+   position: absolute;
+
+   left: 0%; /* For older browsers */
+   left: calc(50% - 320px); /* For modern browsers */
+
+   /* Add a decorative border to the images. */
+   border: 4px solid #9CD54F;
+
+   /* Make sure that images aren't visible initially */
+   opacity: 0;
+
+   /* All images will use the same animation (defined below) */
+   -webkit-animation-name: slideshow;
+           animation-name: slideshow;
+
+   
+   -webkit-animation-duration: 25s;
+           animation-duration: 25s;
+
+   /*
+    * We want our slideshow to continue playing indefinitely.
+    */
+   -webkit-animation-iteration-count: infinite;
+           animation-iteration-count: infinite;
+}
+
+/*
+ * We'll set up a different delay for each image so that they don't all
+ * display at the same time. 
+ */
+.frontImgs img:nth-child(1)  { -webkit-animation-delay:  0s;  animation-delay:  0s; }
+.frontImgs img:nth-child(2)  { -webkit-animation-delay:  5s;  animation-delay:  5s; }
+.frontImgs img:nth-child(3)  { -webkit-animation-delay:  10s; animation-delay:  10s; }
+.frontImgs img:nth-child(4)  { -webkit-animation-delay:  15s; animation-delay:  9s; }
+.frontImgs img:nth-child(5)  { -webkit-animation-delay: 20s;  animation-delay: 20s; }
+
+
+
+
+@-webkit-keyframes slideshow
+{
+   0%   { opacity: 0; }
+   19%  { opacity: 1; }
+   25%  { opacity: 0; }
+
+}
+
+@keyframes slideshow
+{
+   0%   { opacity: 0; }
+   19%  { opacity: 1; }
+   25%  { opacity: 0; }
+}
+

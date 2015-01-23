@@ -1,0 +1,83 @@
+body
+{
+	margin:0;
+
+}
+
+#nav /*get rid of nav*/
+{
+	display:none
+}
+
+/*get rid of facebook link button*/
+.facebook
+{
+	display: none;
+}
+
+
+/*Index*/
+.frontImgs /* get rid of front images*/
+{
+	display:none;
+}
+
+/*************************************/
+/*About Us*/
+
+.staffPic /*no staff pics*/
+{
+	display:none;
+}
+
+#doctorNav /*no doctor nav*/
+{
+	display: none;
+}
+
+#aboutUscontent /*adjust margins on content*/
+{
+	margin:0;
+}
+
+#services h2 /*get rid of decorative font*/
+{
+	font-family:Arial, Georgia, sans-serif;
+	font-weight:bold;
+}
+
+/*************************************/
+/*Testimonials*/
+
+.leftquote, .rightquote
+{
+	display: none;
+}
+#testimonials h2 /*get rid of decorative font*/
+{
+	font-family:Arial, Georgia, sans-serif;
+	font-weight:bold;
+}
+
+/*************************************/
+/*Contact Us*/
+
+.map /*get rid of map image*/
+{
+	display:none;
+}
+
+.contactUs h2 /*get rid of decorative font*/
+{
+	font-family:Arial, Georgia, sans-serif;
+	font-weight:bold;
+}
+
+.form-group /*get rid of contact form*/
+{
+	display: none;
+}
+legend /*get rid of contact form title*/
+{
+	display:none;
+}
